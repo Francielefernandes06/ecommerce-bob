@@ -1,0 +1,85 @@
+@use '../../styles/variaveis'
+
+.footer__container
+
+    background: variaveis.$text-color
+
+    article
+        display: flex
+        justify-content: space-between
+
+        gap: 10px
+        padding: 0px 247px 0px 247px
+
+    .card__container
+        padding: 10px
+
+    h2
+        margin-bottom: 0.75rem
+
+    ul
+        list-style: none
+        padding-left: 0px
+
+    li
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        margin-bottom: 10px
+        text-align: left
+
+    .card__bottom
+        display: flex
+        flex-direction: column
+        gap: 16px
+        padding: 10px
+
+    &, h2
+
+    &, a
+        text-decoration: none
+        color: variaveis.$text-color-secondary
+
+    .footer-row
+        display: flex
+        flex-wrap: wrap
+
+        justify-content: space-between
+        align-items: center
+        background-color: variaveis.$text-color
+        padding: 0px 247px 0 247px
+
+        .col-one
+
+            text-align: center
+            font-size: 14px
+            color: variaveis.$text-color-secondary
+
+        .col-two
+            display: flex
+            gap: 20px
+
+            & span
+                font-size: 14px
+                color: variaveis.$text-color-secondary
+
+        .col-three
+            display: flex
+            gap: 10px
+            align-items: center
+
+            & svg
+                height: 30px
+                width: 30px
+                color: variaveis.$text-color-secondary
+    button
+        border: 1px solid black
+        background: variaveis.$text-color
+        width: 100%
+        height: 3rem
+        text-align: end
+        font-size: 1.25rem
+    hr
+        
+        margin: 0px 247px 10px 247px
+        
