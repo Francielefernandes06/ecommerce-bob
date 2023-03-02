@@ -7,6 +7,7 @@ import  Populares  from "../../components/Populares";
 
 
 import './home.sass'
+import { Link } from "react-router-dom";
 
 
 export const Home = () => {
@@ -17,6 +18,9 @@ export const Home = () => {
             <Carrossel/>
             <Tendencias/>
             <Populares/>
+            <div>
+        <Link to='/produtos' className="refresh-button">VER MAIS PRODUTOS</Link>
+      </div>
 
             <Footer/>
             

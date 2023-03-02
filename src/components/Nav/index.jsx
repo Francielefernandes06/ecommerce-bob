@@ -6,10 +6,10 @@ export const Nav = () => {
       <ul>
         <li>
           <a href="/">HOME</a>
-          <a href="/">CAMISAS</a>
-          <a href="/">BLUSAS</a>
-          <a href="/">CALÇAS</a>
-          <a href="/">ACESSÓRIOS</a>
+          <a href="/categorias">CAMISAS</a>
+          <a href="/categorias">BLUSAS</a>
+          <a href="/categorias">CALÇAS</a>
+          <a href="/categorias">ACESSÓRIOS</a>
         <a href="/"><span>OUTLET</span></a>
         </li>
       </ul>

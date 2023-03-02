@@ -1,0 +1,217 @@
+@use '../../styles/variaveis'
+
+.container-produto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex: 1 2 0
+    padding: 0px 247px 0px 247px
+    margin-top: 3rem
+
+    .imagens-produto
+        width: 50%
+        height: 80vh
+
+        .imagem-principal
+
+            width: 100%
+            height: 80%
+            img
+                width: 100%
+                height: 100%
+
+        .imagens-secundarias
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 1rem
+
+            width: 100%
+
+            .img-second
+                width: 20%
+                height: 25%
+                img
+                    width: 100%
+                    height: 100%
+
+    .informacoes-produto
+        background: blue
+        width: 45%
+        height: 80vh
+
+        .dados-produto
+            background: white
+            width: 100%
+            height: 100%
+
+            .header-produto-dado
+
+                width: 100%
+                height: 25%
+
+                h2
+                    color: variaveis.$text-color-three
+                    font-weight: 500
+                    font-size: 1.5rem
+
+                .preco-produto
+                    color: variaveis.$text-color-secondary
+                    font-weight: 600
+                    font-size: 1.25rem
+                    margin-top: 1rem
+                p
+                    color: variaveis.$text-color-three
+                    font-weight: 500
+                    font-size: 0.75rem
+                    margin-top: 1rem
+
+            .body-produto-dado
+                width: 100%
+                height: 40%
+
+                .cores-produto
+                    h2
+                        color: variaveis.$text-color-secondary
+                        font-weight: 500
+                        font-size: 1rem
+                        margin-top: 1rem
+                    span
+                        color: variaveis.$text-color-details
+
+                    .cores
+                        display: flex
+                        align-items: center
+                        margin-top: 1rem
+
+                        .cor
+                            width: 20px
+                            height: 20px
+                            margin-right: 0.5rem
+
+                        .azul
+                            background: blue
+                        .vermelho
+                            background: red
+                        .roxo
+                            background: black
+                        .verde
+                            background: green
+
+                        .active
+                            border: 2px solid variaveis.$text-color-secondary
+
+                .tamanho-produto
+                    h2
+                        color: variaveis.$text-color-secondary
+                        font-weight: 500
+                        font-size: 1rem
+                        margin-top: 1rem
+
+                    .tamanhos
+                        display: flex
+                        align-items: center
+                        margin-top: 1rem
+                        gap: 0.7rem
+
+                        .tamanho
+                            text-align: center
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            background: variaveis.$text-color-three
+                            font-size: 0.8rem
+                            font-weight: 700
+                            width: 2rem
+                            height: 2rem
+
+                        .active
+                            background: variaveis.$background-color-secodary
+                            color: variaveis.$text-color
+
+                .buttons-produto
+                    display: flex
+                    align-items: center
+                    margin-top: 2rem
+                    gap: 1rem
+
+                    .spinner-container
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        background-color: #f0f0f0
+                        padding: 8px
+                        border-radius: 4px
+                        border: 1px solid #ccc
+                        height: 2rem
+
+                        button
+                            font-size: 16px
+                            padding: 8px 16px
+                            border: none
+                            background-color: transparent
+                            color: #333
+                            cursor: pointer
+
+                    input[type="text"]
+                        font-size: 16px
+                        padding: 8px
+                        border: none
+                        background-color: transparent
+                        color: #333
+                        text-align: center
+                        width: 50px
+
+                    button
+                        background-color: #333
+                        color: #fff
+                        border-radius: 4px
+                        padding: 8px 16px
+                        font-size: 16px
+                        cursor: pointer
+                        height: 3rem
+    .descrição-produto
+        width: 100%
+        height: 20%
+
+        .descricao
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            span
+                color: variaveis.$text-color-secondary
+                font-weight: 500
+                font-size: 1rem
+
+        h2
+            color: variaveis.$text-color-secondary
+            font-weight: 500
+            font-size: 1rem
+            margin-top: 1rem
+        p
+            color: variaveis.$text-color-three
+            font-weight: 500
+            font-size: 0.75rem
+            margin-top: 1rem
+
+    .especificacao-produto
+       
+        width: 100%
+        height: 10%
+
+        .especificacao
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            span
+                color: variaveis.$text-color-secondary
+                font-weight: 500
+                font-size: 1rem
+            h2
+                color: variaveis.$text-color-secondary
+                font-weight: 500
+                font-size: 1rem
+                margin-top: 1rem
