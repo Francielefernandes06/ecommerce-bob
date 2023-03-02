@@ -1,0 +1,92 @@
+@use "../../styles/variaveis"
+
+.container
+    width: 100%
+    .content
+        background-position: center
+        background-size: cover
+        width: 100%
+        height: 80vh
+
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+        justify-content: center
+        position: relative
+
+    span
+        color: #FFF
+        display: flex
+        align-items: center
+        width: 100%
+        justify-content: space-between
+        
+        position: absolute
+
+        svg:hover
+            transition: 0.2s ease
+            cursor: pointer
+            transform: scale(1.2)
+
+    .carrousel-data
+        color: #e1e1e6
+        display: flex
+        align-items: first baseline
+        justify-content: space-between
+        width: 80%
+        margin-top: 158px
+        max-height: 2rem
+        margin-bottom: 26rem
+        gap: 117px
+        flex-direction: column
+        padding-left: 11rem
+
+        div
+            width: 27.5rem
+        h2
+            font-size: 3.6875rem
+            line-height: 72px
+            margin-bottom: 0.8rem
+            font-weight: 500
+            color: variaveis.$background-color-secodary
+            
+
+        p
+            font-size: 1.375rem
+            line-height: 27px
+            font-weight: 500
+            color: variaveis.$text-color
+
+
+        a
+            background: variaveis.$button-color
+            display: flex
+            align-items: center
+            gap: 0.5rem
+            padding: 1rem 1.5rem
+            
+            color: variaveis.$text-color
+            cursor: pointer
+            text-decoration: none
+            font-size: 1rem
+            font-weight: 600
+            transition: 0.2s filter
+
+        
+
+.steps
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    width: 100%
+    max-width: 27rem
+    gap: 0.5rem
+    margin: 0.75rem 0
+
+.step
+    height: 0.25rem
+    border-radius: 2px
+    background-color: #000
+
+    &.active
+        background-color: #fff

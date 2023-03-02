@@ -1,7 +1,12 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Nav } from "../../components/Nav";
+import { Carrossel } from "../../components/Carrossel";
+import { Tendencias } from "../../components/Tendencias";
+import  Populares  from "../../components/Populares";
 
+
+import './home.sass'
 
 
 export const Home = () => {
@@ -9,7 +14,9 @@ export const Home = () => {
         <div className="home">
             <Header/>
             <Nav/>
-            <h1>Home</h1>
+            <Carrossel/>
+            <Tendencias/>
+            <Populares/>
 
             <Footer/>
             

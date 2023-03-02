@@ -2,27 +2,27 @@ import "./carrossel.sass"
 import { useState } from "react";
 import {CaretRight, CaretLeft, Play} from 'phosphor-react'
 
-export const Carrousel = () => {
+export const Carrossel = () => {
     const carrouselDatas = [
         {
             id:1,
-            imageUrl: "https://i.ibb.co/KzM79Tf/naruto-compressed-compressed.jpg",
-            description: "Naruto Uzumaki reto",
-            name: 'Naruto Shippuden',
+            imageUrl: "https://www.visa.com.br/content/dam/VCOM/regional/lac/brazil/media-kits/images/parcele-pagina1600x900.jpg",
+            description: "Separamos os melhores looks para você neste 2023",
+            name: 'SUMMER COLLECTION',
             redirectUrl: '#'
         },
         {
             id:2,
-            imageUrl: "https://i.ibb.co/KzM79Tf/naruto-compressed-compressed.jpg",
-            description: "Naruto Uzumaki retorna para casa e une forças com Sakura Haruno para enfrentar uma organização ninja denominada Akatsuki",
-            name: 'Naruto Shippuden',
+            imageUrl: "https://i.ytimg.com/vi/Hi6ONz3gOi0/maxresdefault.jpg",
+            description: "Separamos os melhores looks para você neste 2023",
+            name: 'SUMMER COLLECTION',
             redirectUrl: '#'
         },
         {
             id:3,
-            imageUrl: "https://i.ibb.co/KzM79Tf/naruto-compressed-compressed.jpg",
-            description: "Naruto Uzumaki retorna para casa e une forças com Sakura Haruno para enfrentar uma organização ninja denominada Akatsuki",
-            name: 'Naruto Shippuden',
+            imageUrl: "https://varejodemoda.com.br/wp-content/uploads/2019/10/loja-masculina-manequim.jpg",
+            description: "Separamos os melhores looks para você neste 2023",
+            name: 'SUMMER COLLECTION',
             redirectUrl: '#'
         },
     ]
@@ -49,40 +49,40 @@ export const Carrousel = () => {
 
     return(
         <div className="container">
-            {slideStepData.map((anime) => {
-                if(anime.id == atualSlide) {
-                    return (
-                        <div key={anime.id} className='content' style={{backgroundImage: `linear-gradient(0deg, #000000a1, #000000a1),url(${anime.imageUrl})`}}>
-                            <span>
-                                <CaretLeft size={64} weight="bold" onClick={handleDecrementAnime} />
-                                <CaretRight size={64} weight="bold" onClick={handleIncrementAnime}/>
-                            </span>
+        {slideStepData.map((item) => {
+            if(item.id == atualSlide) {
+                return (
+                    <div key={item.id} className='content' style={{backgroundImage: `linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(0, 0, 0, 0.63)),url(${item.imageUrl})`}}>
+                        <span>
+                            <CaretLeft size={64} weight="bold" onClick={handleDecrementAnime} />
+                            <CaretRight size={64} weight="bold" onClick={handleIncrementAnime}/>
+                        </span>
 
-                            <div className='carrousel-data'>
-                                <div>
-                                    <h2>{anime.name}</h2>
-                                    <p>{anime.description}</p>
-                                </div>
+                        <div className='carrousel-data'>
+                            <div>
+                                <h2>{item.name}</h2>
+                                <p>{item.description}</p>
+                            </div>
+                            
+                            <a>
+                                SHOP NOW
                                 
-                                <a>
-                                    Assistir
-                                    <Play size={20} weight="fill" />
-                                </a>
-                            </div>
-
-                            <div className="steps">
-                                {slideStepData.map(anime => {
-                                    return( 
-                                        <div className={`step ${anime.id == atualSlide && 'active'}`} key={anime.id}> 
-                                        </div>
-                                    )
-                                })}
-                            </div>
+                            </a>
                         </div>
-                    )
-                }
-                return <></>
-            })}
-        </div>
+
+                        <div className="steps">
+                            {slideStepData.map(item => {
+                                return( 
+                                    <div className={`step ${item.id == atualSlide && 'active'}`} key={item.id}> 
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                )
+            }
+            return <></>
+        })}
+    </div>
     )
 }

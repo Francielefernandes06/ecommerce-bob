@@ -1,0 +1,54 @@
+@use '../../styles/variaveis'
+
+.product-list
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 6.0625rem
+    width: 100%
+
+.product-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+
+    margin: 20px
+    grid-row-gap: 5%
+    grid-column-gap: 1%
+
+.product-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 5px
+
+    h2
+        font-size: 1rem
+        font-weight: 500
+        color: variaveis.$text-color-three
+        padding-left: 1.1875rem
+    p
+        font-size: 1rem
+        font-weight: 600
+        color: variaveis.$text-color-secondary
+        padding-left: 1.1875rem
+
+    & img
+
+        width: 100%
+        max-width: 100%
+        margin-bottom: 10px
+
+.refresh-button
+    background: variaveis.$button-color
+    margin: 2.125rem 0 3.5rem 0
+    display: flex
+    align-items: center
+    gap: 0.5rem
+    padding: 1rem 1.5rem
+
+    color: variaveis.$text-color
+    cursor: pointer
+    text-decoration: none
+    font-size: 1rem
+    font-weight: 600
+    transition: 0.2s filter
