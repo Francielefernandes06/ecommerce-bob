@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
 import "./categorias.sass";
-import { BsFillGridFill } from "react-icons/bs";
-import { FaList } from "react-icons/fa";
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
+
+
+
 
 function Categorias() {
-  // const [data, setData] = useState([]);
+  
+  // const [products, setProducts] = useState([]);
 
   // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios.get('https://bob-teste-front-end.herokuapp.com/api/products.json');
-  //     console.log(result.data);
-  //     setData(result.data);
-  //   };
+  //   async function fetchProducts() {
+  //     const response = await fetch('/api/products.json');
+  //     const data = await response.json();
+  //     setProducts(data);
+  //   }
 
-  //   fetchData();
+  //   fetchProducts();
   // }, []);
+
 
   const produtos = [
     {
@@ -95,7 +96,6 @@ function Categorias() {
 
   return (
     <div className="produto-categoria">
-      
 
       <div className="produto-categoria-grid">
         {produtos.map((product) => (
@@ -110,9 +110,7 @@ function Categorias() {
           </div>
         ))}
       </div>
-      <div>
-        <Link className="refresh-button">VER MAIS PRODUTOS</Link>
-      </div>
+      
     </div>
   );
 }
