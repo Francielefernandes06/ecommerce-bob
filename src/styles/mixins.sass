@@ -1,33 +1,50 @@
 @use 'variaveis'
 
+$mobile-min: 315px
 $mobile-max: 425px
 $tablet-max: 768px
 $laptop-max: 1024px
 $desktop-max: 1440px
 
 @mixin mobile
-@media (max-width: $mobile-max)
+@media (min-width: $mobile-min) and (max-width: $mobile-max)
     body
+        background: #ccc
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
 
          // HOME
+        .menu
+            justify-content: center
+            font-size: 0.5rem
+            gap: 2rem
 
-    nav
-        li
-            gap: 0
             a
-                font-size: 0.75rem
-                padding: 0px 10px
-    .container
-        .carrousel-data
-            align-items: center
-            padding-left: 0
-            div
-                width: 14.5rem
-                text-align: center
-                h2
-                    font-size: 2.75rem
+                svg
+                    font-size: 1rem
+        .container
+            width: 100vw
+
+        nav
+            li
+                gap: 0
+            a
+                font-size: 0.5rem
+
+        .container
+            .carrousel-data
+                align-items: center
+                padding-left: 0
+                div
+                    width: 14.5rem
+                    text-align: center
+                    h2
+                        font-size: 2.75rem
 
     .product-list, .produto-categoria
+        display: none
         .produto-categoria-grid
             grid-template-columns: repeat(1, 1fr)
             grid-column-gap: 0
@@ -67,14 +84,14 @@ $desktop-max: 1440px
                         .buttons-produto
                             flex-direction: column
 
-    .footer__container
+    .footer__container 
         article, .footer-row, .card__bottom
             padding: 0
 
 @mixin tablet
 @media (min-width: $mobile-max) and (max-width: $tablet-max)
     body
-
+        background: blue
         // HOME
         nav
             li
@@ -176,5 +193,3 @@ $desktop-max: 1440px
     .footer__container
         article, .footer-row
             padding: 0
-
-

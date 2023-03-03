@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./categoria.sass";
 import { BsFillGridFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa";
-import '../../styles/mixins.sass'
+import "../../styles/mixins.sass";
 
 export const Categoria = () => {
   return (
@@ -41,11 +41,14 @@ export const Categoria = () => {
             </span>
           </p>
         </div>
-        
       </div>
 
       <Categorias />
-      
+      <div className="btn-paginacao">
+        <Link> &lt;</Link>
+        <Link>&gt;</Link>
+      </div>
+
       <Footer />
     </div>
   );
