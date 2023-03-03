@@ -31,7 +31,7 @@ export const Carrossel = () => {
     const [atualSlide, setAtualSlide] = useState(1)
 
 
-    function handleIncrementAnime(){
+    function handleIncrementProduto(){
         setAtualSlide(stage => {
             if(stage == slideStepData.length) return 1
 
@@ -39,7 +39,7 @@ export const Carrossel = () => {
         })
     }
 
-    function handleDecrementAnime(){
+    function handleIncrementProduto(){
         setAtualSlide(stage => {
             if(stage == 1) return slideStepData.length
 
@@ -54,8 +54,8 @@ export const Carrossel = () => {
                 return (
                     <div key={item.id} className='content' style={{backgroundImage: `linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(0, 0, 0, 0.63)),url(${item.imageUrl})`}}>
                         <span>
-                            <CaretLeft size={64} weight="bold" onClick={handleDecrementAnime} />
-                            <CaretRight size={64} weight="bold" onClick={handleIncrementAnime}/>
+                            <CaretLeft size={64} weight="bold" onClick={handleIncrementProduto} />
+                            <CaretRight size={64} weight="bold" onClick={handleIncrementProduto}/>
                         </span>
 
                         <div className='carrousel-data'>
@@ -64,7 +64,7 @@ export const Carrossel = () => {
                                 <p>{item.description}</p>
                             </div>
                             
-                            <a>
+                            <a href="/shop">
                                 SHOP NOW
                                 
                             </a>

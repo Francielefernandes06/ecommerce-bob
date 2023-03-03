@@ -4,6 +4,9 @@ import { Produtos } from "./pages/Produtos";
 
 import { Home } from "./pages/Home";
 import { Error } from "./pages/Error";
+import './styles/mixins.sass'
+
+
 
 export function Router() {
   return (

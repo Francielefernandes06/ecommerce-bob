@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "./categoria.sass";
 import { BsFillGridFill } from "react-icons/bs";
 import { FaList } from "react-icons/fa";
+import '../../styles/mixins.sass'
 
 export const Categoria = () => {
   return (
