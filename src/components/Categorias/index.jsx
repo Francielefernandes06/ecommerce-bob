@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./categorias.sass";
+import '../../styles/mixins.sass'
 
 
 
@@ -99,7 +100,7 @@ function Categorias() {
 
       <div className="produto-categoria-grid">
         {produtos.map((product) => (
-          <div key={product.id} className="produto-categoria-item">
+          <Link to="/produtos" key={product.id} className="produto-categoria-item">
             <img src={product.photo} alt={product.name} />
             <div className="info-categoria">
             <h2>{product.name}</h2>
@@ -107,7 +108,7 @@ function Categorias() {
 
             </div>
            
-          </div>
+          </Link>
         ))}
       </div>
       

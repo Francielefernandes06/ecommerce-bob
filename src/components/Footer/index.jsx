@@ -1,5 +1,6 @@
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiFillYoutube } from 'react-icons/ai'
 import { BsPinterest } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 import './footer.sass'
 
 
@@ -10,20 +11,20 @@ export const Footer = () =>{
                 <div className='card__container'>
                     
                     <ul>
-                        <li><span>CONTATO</span></li>
-                        <li><span>FRETES E ENTREGAS</span></li>
-                        <li><span>COMO COMPRAR</span></li>
-                        <li><span>TROCAS E DEVOLUÇÕES</span></li>
+                        <li><Link>CONTATO</Link></li>
+                        <li><Link>FRETES E ENTREGAS</Link></li>
+                        <li><Link>COMO COMPRAR</Link></li>
+                        <li><Link>TROCAS E DEVOLUÇÕES</Link></li>
                         
                     </ul>
                 </div>
                 
                 <div  className='card__container'>
                 <ul>
-                        <li><span>SOBRE</span></li>
-                        <li><span>NA MÍDIA</span></li>
-                        <li><span>SEGURANÇA</span></li>
-                        <li><span>POLITICAS</span></li>
+                        <li><Link>SOBRE</Link></li>
+                        <li><Link>NA MÍDIA</Link></li>
+                        <li><Link>SEGURANÇA</Link></li>
+                        <li><Link>POLITICAS</Link></li>
                         
                     </ul>
                 </div>
@@ -35,7 +36,9 @@ export const Footer = () =>{
                     </div>
                     
                    <div>
-                       <button>CADASTRAR</button>
+                       <button>
+                        <Link>CADASTRAR</Link>
+                        </button>
                    </div>
                 </div>
            </article>  
@@ -44,9 +47,9 @@ export const Footer = () =>{
                <div className='footer-row'>
                     <div className='col-one'>COPYRIGHT © 2023</div>
                     <div className='col-two'>
-                        <span>FAQ</span>
-                        <span>MINHA CONTA</span>
-                        <span>MEUS PEDIDOS</span>
+                        <Link>FAQ</Link>
+                        <Link>MINHA CONTA</Link>
+                        <Link>MEUS PEDIDOS</Link>
                     </div>
                     <div className='col-three'>
                         <AiFillFacebook/>

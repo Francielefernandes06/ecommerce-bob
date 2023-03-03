@@ -3,7 +3,7 @@ import './tendencias.sass'
 export const Tendencias = () => {
     return(
         <section className='container-tendencias'>
-            <h2>TENDENCIAS</h2>
+            <h2>TENDÊNCIAS</h2>
             <div className='content-tendencias'>
                 <div className='col-1'>
                     <div className='row-1'>

@@ -1,0 +1,182 @@
+@use 'variaveis'
+
+$mobile-max: 425px
+$tablet-max: 768px
+$laptop-max: 1024px
+$desktop-max: 1440px
+
+@mixin mobile
+@media (max-width: $mobile-max)
+    body
+
+         // HOME
+
+    nav
+        li
+            gap: 0
+            a
+                font-size: 0.75rem
+                padding: 0px 10px
+    .container
+        .carrousel-data
+            align-items: center
+            padding-left: 0
+            div
+                width: 14.5rem
+                text-align: center
+                h2
+                    font-size: 2.75rem
+
+    .product-list, .produto-categoria
+        .produto-categoria-grid
+            grid-template-columns: repeat(1, 1fr)
+            grid-column-gap: 0
+
+            img
+                width: 100%
+                height: 100%
+
+    .container-tendencias
+        .content-tendencias
+            flex-direction: column
+            gap: 2rem
+            .col-1
+                display: flex
+                height: 30rem
+                gap: 1rem
+                flex-direction: column
+
+                .row-1 img
+                    width: 100%
+                    height: 100%
+    //CATEGORIAS
+    .container-categoria
+        .links-categorias
+            gap: 2rem
+
+    // PRODUTOS
+    .container-produto
+        padding: 1rem
+        .informacoes-produto, .imagens-produto
+            height: 100vh
+            .dados-produto
+                .header-produto
+                    height: 30%
+                    .body-produto-dado
+                        height: 35%
+                        .buttons-produto
+                            flex-direction: column
+
+    .footer__container
+        article, .footer-row, .card__bottom
+            padding: 0
+
+@mixin tablet
+@media (min-width: $mobile-max) and (max-width: $tablet-max)
+    body
+
+        // HOME
+        nav
+            li
+                gap: 0
+                a
+                    font-size: 0.75rem
+                    padding: 0px 10px
+
+        .container
+            .carrousel-data
+                align-items: center
+                padding-left: 0
+                div
+                    width: 100%
+                    text-align: center
+        .product-list, .produto-categoria
+            .produto-categoria
+                width: 90%
+            .produto-categoria-grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-column-gap: 1rem
+
+            img
+                width: 100%
+                height: 100%
+
+        .container-tendencias
+            .content-tendencias
+                flex-direction: column
+                gap: 2rem
+                .col-1
+                    display: flex
+                    height: 30rem
+                    gap: 1rem
+                    flex-direction: column
+
+                    .row-1 img
+                        width: 100%
+                        height: 100%
+
+        // PRODUTOS
+        .container-produto
+            padding: 1rem
+            .informacoes-produto, .imagens-produto
+                height: 100vh
+                .dados-produto
+                    .header-produto
+                        height: 30%
+                    .body-produto-dado
+                        height: 35%
+                        .buttons-produto
+                            flex-direction: column
+        .footer__container
+            article, .footer-row
+                padding: 0
+
+@mixin laptop
+@media (min-width: $tablet-max) and (max-width: $laptop-max)
+    body
+
+         // HOME
+    .product-list, .produto-categoria
+        .produto-categoria
+            width: 90%
+            .produto-categoria-grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-column-gap: 1rem
+
+            img
+                width: 100%
+                height: 100%
+
+    .container-tendencias
+        .content-tendencias
+
+            .col-1
+                display: flex
+                height: 30rem
+                flex-direction: column
+
+                .row-1 img
+                    width: 100%
+                    height: 100%
+    //CATEGORIAS
+
+    // PRODUTOS
+    .container-produto
+        padding: 1rem
+        .informacoes-produto, .imagens-produto
+            height: 100vh
+            .dados-produto
+                .header-produto
+                    height: 30%
+                    .body-produto-dado
+                        height: 35%
+                        .buttons-produto
+                            flex-direction: row
+
+    .footer__container
+        article, .footer-row
+            padding: 0
+
+@mixin desktop
+@media (min-width: $laptop-max) and (max-width: $desktop-max)
+    body

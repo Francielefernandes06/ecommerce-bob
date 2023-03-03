@@ -1,5 +1,6 @@
 import "./produto.sass";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Produto() {
   const [contador, setContador] = useState(0);
@@ -54,9 +55,9 @@ function Produto() {
               </h2>
               <div className="cores">
                 <div className="cor azul"></div>
-                <div className="cor vermelho active"></div>
+                <div className="cor vermelho "></div>
                 <div className="cor roxo"></div>
-                <div className="cor verde"></div>
+                <div className="cor verde active"></div>
               </div>
             </div>
 
@@ -87,7 +88,7 @@ function Produto() {
                   +
                 </button>
               </div>
-              <button>Comprar</button>
+              <button> <Link to='/carrinho'>Comprar</Link></button>
             </div>
           </div>
           <div className="descrição-produto">
