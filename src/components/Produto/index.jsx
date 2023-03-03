@@ -19,20 +19,20 @@ function Produto() {
     <div className="container-produto">
       <div className="imagens-produto">
         <div className="imagem-principal">
-          <img src="/src/img/principal.png" alt="" />
+          <img src="/public/img/principal.png" alt="" />
         </div>
         <div className="imagens-secundarias">
           <div className="img-second">
-            <img src="/src/img/imagem-1.png" alt="" />
+            <img src="/public/img/imagem-1.png" alt="" />
           </div>
           <div className="img-second">
-            <img src="/src/img/imagem-2.png" alt="" />
+            <img src="/public/img/imagem-2.png" alt="" />
           </div>
           <div className="img-second">
-            <img src="/src/img/imagem-3.png" alt="" />
+            <img src="/public/img/imagem-3.png" alt="" />
           </div>
           <div className="img-second">
-            <img src="/src/img/imagem-4.png" alt="" />
+            <img src="/public/img/imagem-4.png" alt="" />
           </div>
         </div>
       </div>
